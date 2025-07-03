@@ -8,7 +8,7 @@
             "name": "C#: Jim Debug",
             "type": "dotnet",
             "request": "launch",
-            "projectPath": "${workspaceFolder}/src/Test/Test.csproj"
+            "projectPath": "${workspaceFolder}/src/Bench/Bench.csproj"
         }
     ]
 }

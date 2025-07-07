@@ -1,6 +1,9 @@
+using ImmediateJson;
+
 namespace Bench;
 
-public class Person
+[GenerateImmediateJsonSerializer]
+public partial class Person
 {
     public string Name { get; set; } = string.Empty;
     public int Age { get; set; }
@@ -8,6 +11,7 @@ public class Person
     public List<Person> Friends { get; set; } = [];
 }
 
+[GenerateImmediateJsonSerializer]
 public class Address
 {
     public string Street { get; set; } = string.Empty;

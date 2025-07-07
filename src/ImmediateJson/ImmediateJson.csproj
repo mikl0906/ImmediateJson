@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- NuGet Package Settings -->
+    <PackageId>ImmediateJson</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Mikhail Koshelev</Authors>
+    <Description>A source generator for creating high-performance immediate JSON serializor for
+      specific types.</Description>
+    <PackageTags>json, source-generator, performance</PackageTags>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference
+      Include="..\ImmediateJson.SourceGenerators\ImmediateJson.SourceGenerators.csproj"
+      ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
+  </ItemGroup>
+
+</Project>

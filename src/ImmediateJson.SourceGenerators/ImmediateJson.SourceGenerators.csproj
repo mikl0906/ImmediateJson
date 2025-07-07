@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Ensures the generator is using the recommended rules created by the .NET team -->
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+    <!-- Enables the project to act as a generator and work with the Roslyn compiler, making
+    debugging of the generator possible -->
+    <IsRoslynComponent>true</IsRoslynComponent>
+    <!-- This prevents the project build from being included in output, which is ideal since the
+    generator is meant to be compile-time only -->
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.14.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="4.14.0"
+      PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

@@ -108,6 +108,7 @@ public class SerializationBenchmark
     public string ImmediateSerialization()
     {
         return PersonSerializer2.Serialize(_person);
+
     }
 
     [Benchmark]
